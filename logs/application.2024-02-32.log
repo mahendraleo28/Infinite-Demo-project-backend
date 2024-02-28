@@ -1,0 +1,419 @@
+2024-02-01 12:30:44.971 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final 
+2024-02-01 12:30:45.048 [restartedMain] INFO  com.example.demo.Task1Application - Starting Task1Application using Java 17.0.8 with PID 17004 (D:\infinite-project1-Sks1-backend-master\target\classes started by mahendras in D:\infinite-project1-Sks1-backend-master) 
+2024-02-01 12:30:45.048 [restartedMain] DEBUG com.example.demo.Task1Application - Running with Spring Boot v3.0.5, Spring v6.0.7 
+2024-02-01 12:30:45.049 [restartedMain] INFO  com.example.demo.Task1Application - No active profile set, falling back to 1 default profile: "default" 
+2024-02-01 12:30:45.125 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-02-01 12:30:45.125 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-02-01 12:30:47.083 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-02-01 12:30:47.446 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 353 ms. Found 17 JPA repository interfaces. 
+2024-02-01 12:30:48.215 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http) 
+2024-02-01 12:30:48.229 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"] 
+2024-02-01 12:30:48.230 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2024-02-01 12:30:48.230 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7] 
+2024-02-01 12:30:48.322 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2024-02-01 12:30:48.322 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3184 ms 
+2024-02-01 12:30:48.363 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+2024-02-01 12:30:48.868 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7617a824 
+2024-02-01 12:30:48.874 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+2024-02-01 12:30:48.895 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dept?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC' 
+2024-02-01 12:30:49.213 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-02-01 12:30:49.319 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final 
+2024-02-01 12:30:50.414 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect 
+2024-02-01 12:30:50.417 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-02-01 12:30:53.662 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table basic_details add constraint FKkyo4crw7utm38ea4xnqfscrrm foreign key (person_id) references person (id)" via JDBC Statement 
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table basic_details add constraint FKkyo4crw7utm38ea4xnqfscrrm foreign key (person_id) references person (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:587)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:532)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:458)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:278)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:126)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:336)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1423)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.example.demo.Task1Application.main(Task1Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLException: Referencing column 'person_id' and referenced column 'id' in foreign key constraint 'FKkyo4crw7utm38ea4xnqfscrrm' are incompatible.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+2024-02-01 12:30:53.703 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table education_details add constraint FKi890blmflv7h71l9jay2l0vee foreign key (person_id) references person (id)" via JDBC Statement 
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table education_details add constraint FKi890blmflv7h71l9jay2l0vee foreign key (person_id) references person (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:587)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:532)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:458)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:278)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:126)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:336)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1423)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.example.demo.Task1Application.main(Task1Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLException: Referencing column 'person_id' and referenced column 'id' in foreign key constraint 'FKi890blmflv7h71l9jay2l0vee' are incompatible.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+2024-02-01 12:30:53.746 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table work_details add constraint FKh13xa3tm1ha105tmrg1cv8xgl foreign key (person_id) references person (id)" via JDBC Statement 
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table work_details add constraint FKh13xa3tm1ha105tmrg1cv8xgl foreign key (person_id) references person (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:587)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:532)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:458)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:278)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:126)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:336)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1423)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.example.demo.Task1Application.main(Task1Application.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLException: Referencing column 'person_id' and referenced column 'id' in foreign key constraint 'FKh13xa3tm1ha105tmrg1cv8xgl' are incompatible.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+2024-02-01 12:30:53.747 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2024-02-01 12:30:53.759 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-02-01 12:30:54.674 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-02-01 12:30:54.754 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice 
+2024-02-01 12:30:54.859 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 71 mappings in 'requestMappingHandlerMapping' 
+2024-02-01 12:30:54.889 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping' 
+2024-02-01 12:30:54.899 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice 
+2024-02-01 12:30:55.034 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2024-02-01 12:30:55.058 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"] 
+2024-02-01 12:30:55.103 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '' 
+2024-02-01 12:30:55.113 [restartedMain] INFO  com.example.demo.Task1Application - Started Task1Application in 10.731 seconds (process running for 13.066) 
+2024-02-01 12:31:08.446 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-02-01 12:31:08.446 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2024-02-01 12:31:08.446 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver 
+2024-02-01 12:31:08.446 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver 
+2024-02-01 12:31:08.446 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver 
+2024-02-01 12:31:08.447 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@44fb647f 
+2024-02-01 12:31:08.456 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@94e81ff 
+2024-02-01 12:31:08.457 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data 
+2024-02-01 12:31:08.457 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms 
+2024-02-01 12:31:08.466 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-01 12:31:08.474 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-01 12:31:08.641 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:31:08.643 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-01 12:31:08.679 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:31:08.681 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-01 12:31:08.681 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-01 12:31:08.688 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:31:08.688 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-01 12:31:08.690 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:31:12.444 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments/count", parameters={} 
+2024-02-01 12:31:12.445 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#countEmployee() 
+2024-02-01 12:31:12.445 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/count", parameters={} 
+2024-02-01 12:31:12.445 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students/count", parameters={} 
+2024-02-01 12:31:12.445 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#countEmployee() 
+2024-02-01 12:31:12.445 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#countStudents() 
+2024-02-01 12:31:12.446 [http-nio-8081-exec-3] INFO  c.e.demo.service.DepartmentService - A info Message 
+2024-02-01 12:31:12.708 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:31:12.708 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:31:12.708 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:31:12.708 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [9] 
+2024-02-01 12:31:12.708 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [10] 
+2024-02-01 12:31:12.708 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [3] 
+2024-02-01 12:31:12.709 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:31:12.709 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:31:12.709 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:31:12.714 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students/count", parameters={} 
+2024-02-01 12:31:12.714 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/count", parameters={} 
+2024-02-01 12:31:12.714 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#countEmployee() 
+2024-02-01 12:31:12.715 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#countStudents() 
+2024-02-01 12:31:12.716 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments/count", parameters={} 
+2024-02-01 12:31:12.716 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#countEmployee() 
+2024-02-01 12:31:12.717 [http-nio-8081-exec-8] INFO  c.e.demo.service.DepartmentService - A info Message 
+2024-02-01 12:31:12.724 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:31:12.724 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [9] 
+2024-02-01 12:31:12.725 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:31:12.725 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [3] 
+2024-02-01 12:31:12.725 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:31:12.726 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:31:12.727 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:31:12.727 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [10] 
+2024-02-01 12:31:12.729 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:37:57.139 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments/count", parameters={} 
+2024-02-01 12:37:57.141 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#countEmployee() 
+2024-02-01 12:37:57.141 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students/count", parameters={} 
+2024-02-01 12:37:57.141 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/count", parameters={} 
+2024-02-01 12:37:57.142 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#countEmployee() 
+2024-02-01 12:37:57.142 [http-nio-8081-exec-3] INFO  c.e.demo.service.DepartmentService - A info Message 
+2024-02-01 12:37:57.142 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#countStudents() 
+2024-02-01 12:37:57.168 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:37:57.168 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:37:57.168 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [3] 
+2024-02-01 12:37:57.168 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [10] 
+2024-02-01 12:37:57.168 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:37:57.168 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [9] 
+2024-02-01 12:37:57.169 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:37:57.169 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:37:57.169 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:37:57.179 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students/count", parameters={} 
+2024-02-01 12:37:57.179 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#countStudents() 
+2024-02-01 12:37:57.179 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments/count", parameters={} 
+2024-02-01 12:37:57.179 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/count", parameters={} 
+2024-02-01 12:37:57.179 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#countEmployee() 
+2024-02-01 12:37:57.180 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#countEmployee() 
+2024-02-01 12:37:57.180 [http-nio-8081-exec-10] INFO  c.e.demo.service.DepartmentService - A info Message 
+2024-02-01 12:37:57.199 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:37:57.199 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [10] 
+2024-02-01 12:37:57.200 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:37:57.206 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:37:57.207 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [9] 
+2024-02-01 12:37:57.209 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:37:57.211 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:37:57.212 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [3] 
+2024-02-01 12:37:57.213 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:45:03.391 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-01 12:45:03.391 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-01 12:45:03.399 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:45:03.399 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-01 12:45:03.402 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:45:03.404 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-01 12:45:03.404 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-01 12:45:03.412 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:45:03.412 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-01 12:45:03.413 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:45:19.988 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/employees", parameters={} 
+2024-02-01 12:45:19.988 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.ExcelController#getAllEmployees() 
+2024-02-01 12:45:20.016 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:45:20.017 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Employee{id=1, name='Narendra', email='S', phone='Narendra@gmail.com'}, Employee{id=2, name='Mahend (truncated)...] 
+2024-02-01 12:45:20.021 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:45:20.022 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/employees", parameters={} 
+2024-02-01 12:45:20.022 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.ExcelController#getAllEmployees() 
+2024-02-01 12:45:20.033 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:45:20.033 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Employee{id=1, name='Narendra', email='S', phone='Narendra@gmail.com'}, Employee{id=2, name='Mahend (truncated)...] 
+2024-02-01 12:45:20.034 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:59:53.493 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/excelemploy/filtered-employees", parameters={} 
+2024-02-01 12:59:53.493 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/excelemploy/list", parameters={} 
+2024-02-01 12:59:53.494 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.Excelemploycontroller#getAllEmployees() 
+2024-02-01 12:59:53.494 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.Excelemploycontroller#getFilteredEmployees() 
+2024-02-01 12:59:53.566 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:59:53.568 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Excelemploy [id=1, firstName=Narendra, lastName=Narendra, ceoCid=Java, dateOfBirth=1998-10-05 00:00 (truncated)...] 
+2024-02-01 12:59:53.583 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:59:53.587 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/excelemploy/list", parameters={} 
+2024-02-01 12:59:53.588 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.Excelemploycontroller#getAllEmployees() 
+2024-02-01 12:59:53.600 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:59:53.601 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Excelemploy [id=1, firstName=Narendra, lastName=Narendra, ceoCid=Java, dateOfBirth=1998-10-05 00:00 (truncated)...] 
+2024-02-01 12:59:53.607 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:59:53.607 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:59:53.608 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Excelemploy [id=1, firstName=Narendra, lastName=Narendra, ceoCid=Java, dateOfBirth=1998-10-05 00:00 (truncated)...] 
+2024-02-01 12:59:53.609 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/excelemploy/filtered-employees", parameters={} 
+2024-02-01 12:59:53.609 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.Excelemploycontroller#getFilteredEmployees() 
+2024-02-01 12:59:53.610 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 12:59:53.621 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 12:59:53.622 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Excelemploy [id=1, firstName=Narendra, lastName=Narendra, ceoCid=Java, dateOfBirth=1998-10-05 00:00 (truncated)...] 
+2024-02-01 12:59:53.624 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:09.556 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students/count", parameters={} 
+2024-02-01 01:00:09.556 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments/count", parameters={} 
+2024-02-01 01:00:09.556 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/count", parameters={} 
+2024-02-01 01:00:09.556 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#countStudents() 
+2024-02-01 01:00:09.556 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#countEmployee() 
+2024-02-01 01:00:09.556 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#countEmployee() 
+2024-02-01 01:00:09.557 [http-nio-8081-exec-3] INFO  c.e.demo.service.DepartmentService - A info Message 
+2024-02-01 01:00:09.563 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:09.563 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:09.563 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:09.564 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [10] 
+2024-02-01 01:00:09.564 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [9] 
+2024-02-01 01:00:09.564 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [3] 
+2024-02-01 01:00:09.565 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:09.565 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:09.565 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:09.569 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/count", parameters={} 
+2024-02-01 01:00:09.569 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students/count", parameters={} 
+2024-02-01 01:00:09.570 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#countEmployee() 
+2024-02-01 01:00:09.570 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#countStudents() 
+2024-02-01 01:00:09.571 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments/count", parameters={} 
+2024-02-01 01:00:09.571 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#countEmployee() 
+2024-02-01 01:00:09.571 [http-nio-8081-exec-1] INFO  c.e.demo.service.DepartmentService - A info Message 
+2024-02-01 01:00:09.579 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:09.579 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:09.580 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [9] 
+2024-02-01 01:00:09.580 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [10] 
+2024-02-01 01:00:09.580 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:09.580 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:09.580 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:09.581 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [3] 
+2024-02-01 01:00:09.582 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:11.089 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments", parameters={} 
+2024-02-01 01:00:11.089 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#getAllDepartments() 
+2024-02-01 01:00:11.102 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:11.103 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Department [id=1, name=Mech], Department [id=2, name=Cse], Department [id=3, name=Civil], Departmen (truncated)...] 
+2024-02-01 01:00:11.107 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:12.591 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/employ", parameters={} 
+2024-02-01 01:00:12.591 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#getAllEmployees() 
+2024-02-01 01:00:12.607 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:12.607 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.demo.model.Employee@13881f59, com.example.demo.model.Employee@76d6f6fb, com.example.dem (truncated)...] 
+2024-02-01 01:00:12.613 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:00:13.884 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students", parameters={} 
+2024-02-01 01:00:13.884 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#getAllStudents() 
+2024-02-01 01:00:13.893 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:00:13.893 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Student [id=1, name=Student1, email=Student1@gmail.com, phone=1234567890], Student [id=2, name=Stud (truncated)...] 
+2024-02-01 01:00:13.897 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:21.123 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/basic-details/all", parameters={} 
+2024-02-01 01:19:21.123 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BasicDetailsController#getAllBasicDetails() 
+2024-02-01 01:19:21.162 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:21.162 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.demo.model.BasicDetails@1abab56c, com.example.demo.model.BasicDetails@509ec308, com.exa (truncated)...] 
+2024-02-01 01:19:21.166 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/basic-details/all", parameters={} 
+2024-02-01 01:19:21.166 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:21.166 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BasicDetailsController#getAllBasicDetails() 
+2024-02-01 01:19:21.171 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:21.171 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.demo.model.BasicDetails@421cf113, com.example.demo.model.BasicDetails@47ed91be, com.exa (truncated)...] 
+2024-02-01 01:19:21.172 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:24.293 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/work-details/wd/1", parameters={} 
+2024-02-01 01:19:24.293 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/education-details/ed/1", parameters={} 
+2024-02-01 01:19:24.295 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.WorkDetailsController#getWorkDetailsByPersonId(Long) 
+2024-02-01 01:19:24.295 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EducationDetailsController#getEducationDetailsById1(Long) 
+2024-02-01 01:19:24.365 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:24.365 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:24.365 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.WorkDetails@12d969bc] 
+2024-02-01 01:19:24.365 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.EducationDetails@4d0a4af0] 
+2024-02-01 01:19:24.366 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:24.366 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:25.306 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/education-details/ed/1", parameters={} 
+2024-02-01 01:19:25.306 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/work-details/wd/1", parameters={} 
+2024-02-01 01:19:25.308 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.WorkDetailsController#getWorkDetailsByPersonId(Long) 
+2024-02-01 01:19:25.308 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EducationDetailsController#getEducationDetailsById1(Long) 
+2024-02-01 01:19:25.315 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:25.315 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:25.315 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.EducationDetails@545db375] 
+2024-02-01 01:19:25.316 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.WorkDetails@1f693377] 
+2024-02-01 01:19:25.317 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:25.317 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:26.402 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/education-details/ed/1", parameters={} 
+2024-02-01 01:19:26.402 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/work-details/wd/1", parameters={} 
+2024-02-01 01:19:26.403 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EducationDetailsController#getEducationDetailsById1(Long) 
+2024-02-01 01:19:26.404 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.WorkDetailsController#getWorkDetailsByPersonId(Long) 
+2024-02-01 01:19:26.409 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:26.409 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:26.409 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.EducationDetails@5c184be0] 
+2024-02-01 01:19:26.409 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.WorkDetails@1517b5f7] 
+2024-02-01 01:19:26.411 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:26.411 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:27.214 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/work-details/wd/2", parameters={} 
+2024-02-01 01:19:27.214 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/education-details/ed/2", parameters={} 
+2024-02-01 01:19:27.216 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.WorkDetailsController#getWorkDetailsByPersonId(Long) 
+2024-02-01 01:19:27.216 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EducationDetailsController#getEducationDetailsById1(Long) 
+2024-02-01 01:19:27.223 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:27.223 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:27.223 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.EducationDetails@4ee97812] 
+2024-02-01 01:19:27.223 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.WorkDetails@2375e689] 
+2024-02-01 01:19:27.224 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:27.224 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:28.464 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/education-details/ed/3", parameters={} 
+2024-02-01 01:19:28.464 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/work-details/wd/3", parameters={} 
+2024-02-01 01:19:28.465 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EducationDetailsController#getEducationDetailsById1(Long) 
+2024-02-01 01:19:28.465 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.WorkDetailsController#getWorkDetailsByPersonId(Long) 
+2024-02-01 01:19:28.473 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:28.473 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-01 01:19:28.473 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.WorkDetails@76965325] 
+2024-02-01 01:19:28.473 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.demo.model.EducationDetails@2af9845f] 
+2024-02-01 01:19:28.474 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-01 01:19:28.474 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 

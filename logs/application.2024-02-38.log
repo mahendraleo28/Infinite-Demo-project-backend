@@ -1,0 +1,21 @@
+2024-02-07 11:35:37.774 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18h6m46s332ms550µs300ns). 
+2024-02-07 12:12:57.089 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/excelemploy/filtered-employees", parameters={} 
+2024-02-07 12:12:57.089 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/excelemploy/list", parameters={} 
+2024-02-07 12:12:57.090 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.Excelemploycontroller#getFilteredEmployees() 
+2024-02-07 12:12:57.090 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.Excelemploycontroller#getAllEmployees() 
+2024-02-07 12:12:57.144 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-07 12:12:57.146 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Excelemploy [id=1, firstName=Narendra, lastName=Narendra, ceoCid=Java, dateOfBirth=1998-10-05 00:00 (truncated)...] 
+2024-02-07 12:12:57.164 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-07 12:12:57.167 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/excelemploy/list", parameters={} 
+2024-02-07 12:12:57.167 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.Excelemploycontroller#getAllEmployees() 
+2024-02-07 12:12:57.176 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-07 12:12:57.176 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Excelemploy [id=1, firstName=Narendra, lastName=Narendra, ceoCid=Java, dateOfBirth=1998-10-05 00:00 (truncated)...] 
+2024-02-07 12:12:57.179 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-07 12:12:57.202 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-07 12:12:57.202 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Excelemploy [id=1, firstName=Narendra, lastName=Narendra, ceoCid=Java, dateOfBirth=1998-10-05 00:00 (truncated)...] 
+2024-02-07 12:12:57.203 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-07 12:12:57.205 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/excelemploy/filtered-employees", parameters={} 
+2024-02-07 12:12:57.205 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.Excelemploycontroller#getFilteredEmployees() 
+2024-02-07 12:12:57.211 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-07 12:12:57.212 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Excelemploy [id=1, firstName=Narendra, lastName=Narendra, ceoCid=Java, dateOfBirth=1998-10-05 00:00 (truncated)...] 
+2024-02-07 12:12:57.213 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 

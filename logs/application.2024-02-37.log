@@ -1,0 +1,53 @@
+2024-02-06 11:02:15.459 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h13m45s520ms832µs500ns). 
+2024-02-06 03:41:40.322 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-06 03:41:40.343 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-06 03:41:40.560 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:41:40.571 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-06 03:41:40.592 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:41:40.592 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-06 03:41:40.592 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-06 03:41:40.597 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:41:40.597 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-06 03:41:40.598 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:48:08.220 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments/count", parameters={} 
+2024-02-06 03:48:08.220 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/count", parameters={} 
+2024-02-06 03:48:08.221 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#countEmployee() 
+2024-02-06 03:48:08.222 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students/count", parameters={} 
+2024-02-06 03:48:08.228 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#countStudents() 
+2024-02-06 03:48:08.228 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#countEmployee() 
+2024-02-06 03:48:08.229 [http-nio-8081-exec-10] INFO  c.e.demo.service.DepartmentService - A info Message 
+2024-02-06 03:48:08.632 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:48:08.632 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:48:08.632 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:48:08.633 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [3] 
+2024-02-06 03:48:08.633 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [10] 
+2024-02-06 03:48:08.633 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [9] 
+2024-02-06 03:48:08.634 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:48:08.634 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:48:08.634 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:48:08.637 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/departments/count", parameters={} 
+2024-02-06 03:48:08.637 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/count", parameters={} 
+2024-02-06 03:48:08.637 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.DepartmentController#countEmployee() 
+2024-02-06 03:48:08.637 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.EmployeeController#countEmployee() 
+2024-02-06 03:48:08.638 [http-nio-8081-exec-2] INFO  c.e.demo.service.DepartmentService - A info Message 
+2024-02-06 03:48:08.638 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students/count", parameters={} 
+2024-02-06 03:48:08.638 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.StudentController#countStudents() 
+2024-02-06 03:48:08.643 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:48:08.643 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:48:08.643 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:48:08.643 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [10] 
+2024-02-06 03:48:08.643 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [9] 
+2024-02-06 03:48:08.643 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [3] 
+2024-02-06 03:48:08.644 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:48:08.644 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:48:08.644 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:48:27.258 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/employees", parameters={} 
+2024-02-06 03:48:27.259 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.ExcelController#getAllEmployees() 
+2024-02-06 03:48:27.290 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:48:27.291 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Employee{id=1, name='Narendra', email='S', phone='Narendra@gmail.com'}, Employee{id=2, name='Mahend (truncated)...] 
+2024-02-06 03:48:27.297 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-06 03:48:27.299 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/employees", parameters={} 
+2024-02-06 03:48:27.299 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.ExcelController#getAllEmployees() 
+2024-02-06 03:48:27.307 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-06 03:48:27.308 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Employee{id=1, name='Narendra', email='S', phone='Narendra@gmail.com'}, Employee{id=2, name='Mahend (truncated)...] 
+2024-02-06 03:48:27.309 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 

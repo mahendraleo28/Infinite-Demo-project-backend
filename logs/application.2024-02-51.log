@@ -1,0 +1,11 @@
+2024-02-20 11:18:12.585 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=17h49m55s116ms347µs). 
+2024-02-20 12:13:09.336 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=4m7s13ms128µs100ns). 
+2024-02-20 12:13:59.220 [RMI TCP Connection(366)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested. 
+2024-02-20 12:13:59.242 [RMI TCP Connection(366)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"] 
+2024-02-20 12:13:59.243 [RMI TCP Connection(366)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat] 
+2024-02-20 12:13:59.243 [RMI TCP Connection(366)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2024-02-20 12:13:59.247 [RMI TCP Connection(366)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"] 
+2024-02-20 12:13:59.248 [RMI TCP Connection(366)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"] 
+2024-02-20 12:13:59.251 [RMI TCP Connection(366)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-02-20 12:13:59.252 [RMI TCP Connection(366)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated... 
+2024-02-20 12:13:59.259 [RMI TCP Connection(366)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed. 

@@ -1,26 +1,26 @@
-2023-12-10 08:52:13.635 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final 
-2023-12-10 08:52:13.687 [restartedMain] INFO  com.example.demo.Task1Application - Starting Task1Application using Java 17.0.8 with PID 640 (D:\infinite-project1-Sks1-backend-master\target\classes started by mahendras in D:\infinite-project1-Sks1-backend-master) 
-2023-12-10 08:52:13.687 [restartedMain] DEBUG com.example.demo.Task1Application - Running with Spring Boot v3.0.5, Spring v6.0.7 
-2023-12-10 08:52:13.688 [restartedMain] INFO  com.example.demo.Task1Application - No active profile set, falling back to 1 default profile: "default" 
-2023-12-10 08:52:13.746 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
-2023-12-10 08:52:13.747 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
-2023-12-10 08:52:14.695 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-2023-12-10 08:52:14.872 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 171 ms. Found 17 JPA repository interfaces. 
-2023-12-10 08:52:15.376 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http) 
-2023-12-10 08:52:15.384 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"] 
-2023-12-10 08:52:15.385 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
-2023-12-10 08:52:15.385 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7] 
-2023-12-10 08:52:15.458 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
-2023-12-10 08:52:15.459 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1711 ms 
-2023-12-10 08:52:15.485 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
-2023-12-10 08:52:15.761 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48b99a61 
-2023-12-10 08:52:15.763 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
-2023-12-10 08:52:15.777 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dept?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC' 
-2023-12-10 08:52:15.891 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
-2023-12-10 08:52:15.938 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final 
-2023-12-10 08:52:16.182 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect 
-2023-12-10 08:52:16.183 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
-2023-12-10 08:52:17.116 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table basic_details add constraint FKkyo4crw7utm38ea4xnqfscrrm foreign key (person_id) references person (id)" via JDBC Statement 
+2024-02-15 11:52:11.240 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final 
+2024-02-15 11:52:11.315 [restartedMain] INFO  com.example.demo.Task1Application - Starting Task1Application using Java 17.0.8 with PID 2096 (D:\infinite-project1-Sks1-backend-master\target\classes started by mahendras in D:\infinite-project1-Sks1-backend-master) 
+2024-02-15 11:52:11.315 [restartedMain] DEBUG com.example.demo.Task1Application - Running with Spring Boot v3.0.5, Spring v6.0.7 
+2024-02-15 11:52:11.316 [restartedMain] INFO  com.example.demo.Task1Application - No active profile set, falling back to 1 default profile: "default" 
+2024-02-15 11:52:11.399 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2024-02-15 11:52:11.399 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2024-02-15 11:52:12.522 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-02-15 11:52:12.811 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 280 ms. Found 17 JPA repository interfaces. 
+2024-02-15 11:52:13.529 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http) 
+2024-02-15 11:52:13.539 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"] 
+2024-02-15 11:52:13.540 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2024-02-15 11:52:13.540 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7] 
+2024-02-15 11:52:13.626 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2024-02-15 11:52:13.626 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2226 ms 
+2024-02-15 11:52:13.663 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+2024-02-15 11:52:14.129 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f034e45 
+2024-02-15 11:52:14.132 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+2024-02-15 11:52:14.147 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dept?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC' 
+2024-02-15 11:52:14.306 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-02-15 11:52:14.372 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final 
+2024-02-15 11:52:14.769 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect 
+2024-02-15 11:52:14.771 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead 
+2024-02-15 11:52:16.124 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table basic_details add constraint FKkyo4crw7utm38ea4xnqfscrrm foreign key (person_id) references person (id)" via JDBC Statement 
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table basic_details add constraint FKkyo4crw7utm38ea4xnqfscrrm foreign key (person_id) references person (id)" via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:587)
@@ -72,7 +72,7 @@ Caused by: java.sql.SQLException: Referencing column 'person_id' and referenced 
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 40 common frames omitted
-2023-12-10 08:52:17.140 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table education_details add constraint FKi890blmflv7h71l9jay2l0vee foreign key (person_id) references person (id)" via JDBC Statement 
+2024-02-15 11:52:16.161 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table education_details add constraint FKi890blmflv7h71l9jay2l0vee foreign key (person_id) references person (id)" via JDBC Statement 
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table education_details add constraint FKi890blmflv7h71l9jay2l0vee foreign key (person_id) references person (id)" via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:587)
@@ -124,7 +124,7 @@ Caused by: java.sql.SQLException: Referencing column 'person_id' and referenced 
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 40 common frames omitted
-2023-12-10 08:52:17.172 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table work_details add constraint FKh13xa3tm1ha105tmrg1cv8xgl foreign key (person_id) references person (id)" via JDBC Statement 
+2024-02-15 11:52:16.205 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table work_details add constraint FKh13xa3tm1ha105tmrg1cv8xgl foreign key (person_id) references person (id)" via JDBC Statement 
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table work_details add constraint FKh13xa3tm1ha105tmrg1cv8xgl foreign key (person_id) references person (id)" via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:587)
@@ -176,22 +176,54 @@ Caused by: java.sql.SQLException: Referencing column 'person_id' and referenced 
 	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 40 common frames omitted
-2023-12-10 08:52:17.173 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
-2023-12-10 08:52:17.181 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
-2023-12-10 08:52:17.817 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
-2023-12-10 08:52:17.874 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice 
-2023-12-10 08:52:17.947 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 71 mappings in 'requestMappingHandlerMapping' 
-2023-12-10 08:52:17.962 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping' 
-2023-12-10 08:52:17.970 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice 
-2023-12-10 08:52:18.070 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server 
-2023-12-10 08:52:18.088 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"] 
-2023-12-10 08:52:18.108 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '' 
-2023-12-10 08:52:18.117 [restartedMain] INFO  com.example.demo.Task1Application - Started Task1Application in 4.779 seconds (process running for 5.779) 
-2023-12-10 08:58:48.237 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested. 
-2023-12-10 08:58:48.252 [RMI TCP Connection(10)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"] 
-2023-12-10 08:58:48.252 [RMI TCP Connection(10)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat] 
-2023-12-10 08:58:48.255 [RMI TCP Connection(10)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"] 
-2023-12-10 08:58:48.256 [RMI TCP Connection(10)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"] 
-2023-12-10 08:58:48.268 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
-2023-12-10 08:58:48.270 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... 
-2023-12-10 08:58:48.276 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. 
+2024-02-15 11:52:16.206 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2024-02-15 11:52:16.216 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-02-15 11:52:17.135 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-02-15 11:52:17.211 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice 
+2024-02-15 11:52:17.311 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 71 mappings in 'requestMappingHandlerMapping' 
+2024-02-15 11:52:17.333 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping' 
+2024-02-15 11:52:17.344 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice 
+2024-02-15 11:52:17.501 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2024-02-15 11:52:17.528 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"] 
+2024-02-15 11:52:17.561 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '' 
+2024-02-15 11:52:17.575 [restartedMain] INFO  com.example.demo.Task1Application - Started Task1Application in 6.955 seconds (process running for 9.073) 
+2024-02-15 11:55:11.602 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-02-15 11:55:11.603 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2024-02-15 11:55:11.603 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver 
+2024-02-15 11:55:11.603 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver 
+2024-02-15 11:55:11.603 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver 
+2024-02-15 11:55:11.604 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a774d9f 
+2024-02-15 11:55:11.604 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@163d2149 
+2024-02-15 11:55:11.604 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data 
+2024-02-15 11:55:11.604 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2024-02-15 11:55:11.612 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/user", parameters={} 
+2024-02-15 11:55:11.620 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getUserByUsernameAndPassword(User) 
+2024-02-15 11:55:11.632 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-15 11:55:11.639 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/user", parameters={} 
+2024-02-15 11:55:11.639 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getUserByUsernameAndPassword(User) 
+2024-02-15 11:55:11.689 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [User [id=0, username=Mahendra, password=Mahendra@1, company=null, email=null]] 
+2024-02-15 11:55:11.830 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-15 11:55:11.831 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [User [id=302, username=Mahendra, password=Mahendra@1, company=infinite, email=mahendra@gmail.com]] 
+2024-02-15 11:55:11.839 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-15 11:55:21.258 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-15 11:55:21.258 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-15 11:55:21.288 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-15 11:55:21.288 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-15 11:55:21.290 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-15 11:55:21.292 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-15 11:55:21.293 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-15 11:55:21.301 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-15 11:55:21.301 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-15 11:55:21.302 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-15 12:15:13.817 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-15 12:15:13.817 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-15 12:15:13.824 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-15 12:15:13.825 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-15 12:15:13.827 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-15 12:15:13.829 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/users", parameters={} 
+2024-02-15 12:15:13.830 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.RegistrationController#getAllUsers() 
+2024-02-15 12:15:13.837 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json] 
+2024-02-15 12:15:13.837 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[User [id=55, username=Narendra, password=Narendra@1, company=Narendra, email=Narendra@gmail.com], U (truncated)...] 
+2024-02-15 12:15:13.838 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK 
+2024-02-15 01:03:26.685 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s701ms770µs900ns). 
+2024-02-15 02:35:03.445 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m13s804ms314µs500ns). 

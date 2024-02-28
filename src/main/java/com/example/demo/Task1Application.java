@@ -24,7 +24,6 @@ public class Task1Application {
 		LOGGER.warn("Message logged at WARN level");
 		LOGGER.info("Message logged at INFO level");
 		LOGGER.debug("Message logged at DEBUG level");
-		
 		return "Hello World!!";
 	}
 }
